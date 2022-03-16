@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: #ccc;
+        }
+        .nav{
+            height: 50px;
+            background-color: lightblue;
+        }
+
+        .menu{
+            width: 30%;
+            height: 400px;
+            background-color: #faf;
+            float: left;
+        }
+
+        .main{
+            width: 60%;
+            height: 400px;
+            background-color: wheat;
+            float: left;
+        }
+
+        .footer{
+            background-color: blueviolet;
+        }
+
+        .clear-fix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">nav</nav>
+        <div class="main-area clear-fix">
+            <div class="menu">menu</div>
+            <main class="main">main</main>
+            <!-- 利用::after 來做 clear:both -->
+        </div>
+        <footer class="footer">footer</footer>
+    </div>
+</body>
+</html>
