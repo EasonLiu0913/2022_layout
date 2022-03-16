@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .price::before{
+            content: '$';
+        }
+
+        .price::after{
+            content: '';
+            display: block;
+            width: 80px;
+            height: 2px;
+            background-color: blueviolet;
+            margin-top: -9px;
+            box-shadow: 0px 5px 0px blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="price">
+        <!-- before -->
+        3000
+        <!-- after -->
+    </h1>
+    <h1 class="price">9000</h1>
+</body>
+</html>
