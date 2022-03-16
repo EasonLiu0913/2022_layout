@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alameda</title>
+    <!-- <link rel="stylesheet" href="./css/css-reset.css"> -->
+
+    <link rel="stylesheet" href="/css/css-normalize.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
@@ -24,6 +28,10 @@
             align-items: center;
         }
 
+        .justify-content-between{
+            justify-content: space-between;
+        }
+
         .nav-left,.nav-middle,.nav-right{
             width: 33.33%;
         }
@@ -39,6 +47,13 @@
 
         .nav-right > i{
             margin: 10px;
+        }
+
+        .shopBtn{
+            background-color: #777;
+            color: #fff;
+            /* line-height: 3rem; */
+            padding: 15px 10px;
         }
     </style>
 
@@ -64,5 +79,14 @@
             </div>
         </div>
     </nav>
+
+    <main>
+        <div class="container">
+            <div class="row justify-content-between">
+                <h2>New In</h2>
+                <a class="shopBtn" href="#">Shop Now</a>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
