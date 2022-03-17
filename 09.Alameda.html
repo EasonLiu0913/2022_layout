@@ -106,6 +106,33 @@
         .order-2{
             order: 2;
         }
+
+        .mb-100{
+            margin-bottom: 100px;
+        }
+
+        .viewbookLink{
+            font-size: 2rem;
+            color: #777;
+            text-decoration: underline;
+        }
+
+        .model-demo-left{
+            width: 70%;
+            height: 500px;
+
+        }
+
+        .model-demo-right{
+            width: 30%;
+            height: 500px;
+        }
+
+        .model-demo-left img,.model-demo-right img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
 
 </head>
@@ -139,7 +166,7 @@
                 <a class="shopBtn" href="#">Shop Now</a>
             </div>
 
-            <div class="row">
+            <div class="row  mb-100">
                 <div class="col-4">
                     <div class="product-item">
                         <div class="img-wrap300">
@@ -172,11 +199,11 @@
                 </div>
             </div>
 
-            <div class="row justify-content-center">
+            <div class="row justify-content-center mb-100">
                 <p class="sub-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam atque consectetur cumque praesentium. Sit harum dignissimos non provident? Saepe mollitia enim adipisci minima aliquid, fugiat vel corrupti ipsam? Aut, repellendus.</p>
             </div>
 
-            <div class="row justify-content-between">
+            <div class="row justify-content-between  mb-100">
                 <div class="product-demo-left">
                     <div class="item">
                         <div class="img-wrap300">
@@ -192,8 +219,7 @@
                 </div>
             </div>
 
-
-            <div class="row justify-content-between">
+            <div class="row justify-content-between  mb-100">
                 <div class="product-demo-left order-2">
                     <div class="item">
                         <div class="img-wrap300">
@@ -206,6 +232,19 @@
                 </div>
                 <div class="product-demo-right order-1">
                     <img src="./imgs/model1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="row justify-content-center  mb-100">
+                <a class="viewbookLink" href="#">View Lookbook</a>
+            </div>
+
+            <div class="row mb-100">
+                <div class="model-demo-left">
+                    <img src="./imgs/model3.jpg" alt="">
+                </div>
+                <div class="model-demo-right">
+                    <img src="./imgs/model4.jpg" alt="">
                 </div>
             </div>
     </main>
