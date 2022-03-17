@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <style>
+        /* // Extra small devices (portrait phones, less than 576px)
+        // No media query for `xs` since this is the default in Bootstrap */
+        h1{
+            color: red;
+        }
+
+        /* // Small devices (landscape phones, 576px and up) */
+        @media (min-width: 576px) {
+            h1{
+                color: aqua;
+            }
+        }
+
+        /* // Medium devices (tablets, 768px and up) */
+        @media (min-width: 768px) {
+            h1{
+                color: lightseagreen;
+            }
+        }
+
+        /* // Large devices (desktops, 992px and up) */
+        @media (min-width: 992px) {
+            h1{
+                color: lightsalmon;
+            }
+        }
+
+        /* // Extra large devices (large desktops, 1200px and up) */
+        @media (min-width: 1200px) {
+            h1{
+                color: rgb(200, 122, 255);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello World</h1>
+</body>
+
+</html>
