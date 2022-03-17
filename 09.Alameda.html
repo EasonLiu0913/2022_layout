@@ -41,6 +41,10 @@
             justify-content: space-between;
         }
 
+        .justify-content-center {
+            justify-content: center;
+        }
+
         .nav-left,
         .nav-middle,
         .nav-right {
@@ -74,6 +78,33 @@
 
         .img-wrap300 img {
             width: 100%;
+        }
+
+        .sub-title{
+            width: 60%;
+        }
+
+        .product-demo-left{
+            width: 30%;
+            height: 500px;
+        }
+
+        .product-demo-right{
+            width: 50%;
+            /* height: 500px; */
+            /* background-color: #ccc; */
+        }
+
+        .product-demo-right img{
+            width: 100%;
+        }
+
+        .order-1{
+            order: 1;
+        }
+
+        .order-2{
+            order: 2;
         }
     </style>
 
@@ -139,6 +170,44 @@
 
 
                 </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <p class="sub-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam atque consectetur cumque praesentium. Sit harum dignissimos non provident? Saepe mollitia enim adipisci minima aliquid, fugiat vel corrupti ipsam? Aut, repellendus.</p>
+            </div>
+
+            <div class="row justify-content-between">
+                <div class="product-demo-left">
+                    <div class="item">
+                        <div class="img-wrap300">
+                            <img src="./imgs/product4.jpg" alt="">
+                        </div>
+
+                        <p>Lisa Shirt</p>
+                        <p>$50.00</p>
+                    </div>
+                </div>
+                <div class="product-demo-right">
+                    <img src="./imgs/model1.jpg" alt="">
+                </div>
+            </div>
+
+
+            <div class="row justify-content-between">
+                <div class="product-demo-left order-2">
+                    <div class="item">
+                        <div class="img-wrap300">
+                            <img src="./imgs/product4.jpg" alt="">
+                        </div>
+
+                        <p>Lisa Shirt</p>
+                        <p>$50.00</p>
+                    </div>
+                </div>
+                <div class="product-demo-right order-1">
+                    <img src="./imgs/model1.jpg" alt="">
+                </div>
+            </div>
     </main>
 </body>
 
