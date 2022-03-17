@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,77 +10,75 @@
 
     <link rel="stylesheet" href="/css/css-normalize.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
-        *{
+        * {
             box-sizing: border-box;
         }
 
-        a{
+        a {
             color: #000;
             text-decoration: none;
         }
 
-        .container{
+        .container {
             width: 960px;
             margin-left: auto;
             margin-right: auto;
         }
 
-        .row{
+        .row {
             display: flex;
+            flex-wrap: wrap;
+
             align-items: center;
         }
 
-        .justify-content-between{
+        .justify-content-between {
             justify-content: space-between;
         }
 
-        .nav-left,.nav-middle,.nav-right{
+        .nav-left,
+        .nav-middle,
+        .nav-right {
             width: 33.33%;
         }
 
-        .nav-middle{
+        .nav-middle {
             text-align: center;
         }
 
-        .nav-right{
+        .nav-right {
             display: flex;
             justify-content: flex-end;
         }
 
-        .nav-right > i{
+        .nav-right>i {
             margin: 10px;
         }
 
-        .shopBtn{
+        .shopBtn {
             background-color: #777;
             color: #fff;
             /* line-height: 3rem; */
             padding: 15px 10px;
         }
 
-        .col-4{
+        .col-4 {
             width: 33.33%;
             padding: 0 15px;
         }
 
-        .img-wrap300{
-            background-color: red;
-            width: 300px;
-            height: 300px;
-            overflow: hidden;
-        }
-
-        .img-wrap300 img{
+        .img-wrap300 img {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
         }
     </style>
 
 </head>
+
 <body>
     <nav>
         <div class="container">
@@ -111,10 +110,20 @@
 
             <div class="row">
                 <div class="col-4">
+                    <div class="product-item">
+                        <div class="img-wrap300">
+                            <img src="./imgs/product1.jpg"
+                                alt="">
+                        </div>
+                        <p>Linen Top / Blue</p>
+                    </div>
+                </div>
+                <div class="col-4">
 
                     <div class="product-item">
                         <div class="img-wrap300">
-                            <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1562770859141-0P92159IWN2ULCRMTOMN/ulihu-charcoal-silk-linen-tunic_0326-v1-FINAL-copy.jpg?format=750w" alt="">
+                            <img src="./imgs/product2.jpg"
+                                alt="">
                         </div>
                         <p>Linen Top / Blue</p>
                     </div>
@@ -122,20 +131,15 @@
                 <div class="col-4">
                     <div class="product-item">
                         <div class="img-wrap300">
-                            <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1562770859141-0P92159IWN2ULCRMTOMN/ulihu-charcoal-silk-linen-tunic_0326-v1-FINAL-copy.jpg?format=750w" alt="">
+                            <img src="./imgs/product3.jpg"
+                                alt="">
                         </div>
                         <p>Linen Top / Blue</p>
                     </div>
-                </div><div class="col-4">
-                    <div class="product-item">
-                        <div class="img-wrap300">
-                            <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1562770859141-0P92159IWN2ULCRMTOMN/ulihu-charcoal-silk-linen-tunic_0326-v1-FINAL-copy.jpg?format=750w" alt="">
-                        </div>
-                        <p>Linen Top / Blue</p>
-                    </div>
+
+
                 </div>
-            </div>
-        </div>
     </main>
 </body>
+
 </html>
