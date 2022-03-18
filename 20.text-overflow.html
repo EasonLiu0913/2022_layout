@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text overflow</title>
+    <style>
+        .wrap,
+        .wrap2 {
+            width: 300px;
+            border: 1px solid red;
+        }
+
+        .wrap p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .wrap2 p {
+            display: -webkit-box;
+            -webkit-line-clamp: 6;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis odit quam repellendus asperiores quis
+            minus error, facilis labore sed ipsum! Sequi ipsa expedita quidem quisquam est nemo deserunt sit nesciunt.
+        </p>
+    </div>
+
+    <div class="wrap2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis odit quam repellendus asperiores quis
+            minus error, facilis labore sed ipsum! Sequi ipsa expedita quidem quisquam est nemo deserunt sit nesciunt.deserunt sit nesciunt.deserunt sit nesciunt.deserunt sit nesciunt.
+        </p>
+    </div>
+</body>
+
+</html>
