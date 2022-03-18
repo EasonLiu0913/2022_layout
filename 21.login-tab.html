@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tab</title>
+    <style>
+        nav{
+            min-height: 80px;
+        }
+        .d-flex{
+            display: flex;
+        }
+        .align-items-center{
+            align-items: center;
+        }
+        .justify-content-between{
+            justify-content: space-between;
+        }
+        .wrap {
+            width: 300px;
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 2%;
+            min-height: 300px;
+        }
+
+        .page1 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .img-wrap{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .img-wrap > img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 0 0;
+        }
+
+        .page2 > img{
+            width: 100%;
+        }
+
+        .user-img-area > p{
+            margin: 0;
+        }
+
+        button[type="submit"]{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <div class="wrap">
+        <nav class="d-flex align-items-center justify-content-between">
+            <button id="changePageBtn">change page</button>
+            <div id="loginBtnArea">
+                <button id="loginBtn">Login</button>
+                <div class="user-img-area hidden">
+                    <div class="img-wrap">
+                        <img src="./imgs/model1.jpg" alt="">
+                    </div>
+                    <p>Alanna</p>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="page1 ">
+            <label for="">username</label>
+            <input type="text">
+            <label for="">email</label>
+            <input type="email">
+            <button type="submit">submit</button>
+        </div>
+        <div class="page2 hidden">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/QRcode_image.svg/330px-QRcode_image.svg.png"
+                alt="">
+        </div>
+    </div>
+
+    <script>
+        const changePage = document.querySelector('#changePageBtn');
+        
+        const page1 = document.querySelector('.page1');
+        const page2 = document.querySelector('.page2');
+        const loginArea = document.querySelector('#loginBtnArea');
+        const loginBtn = document.querySelector('#loginBtn');
+        const loginPerson = document.querySelector('#loginBtnArea > .user-img-area');
+        let pageChanged = false;
+        let isLoging = false;
+
+        const handleChangePage = () => {
+            pageChanged = !pageChanged;
+            if (pageChanged) {
+                page1.classList.add('hidden');
+                page2.classList.remove('hidden');
+            }
+            else {
+                page1.classList.remove('hidden');
+                page2.classList.add('hidden');
+            }
+        }
+
+        const handleLogin = ()=>{
+            isLoging =!isLoging;
+            if(isLoging){
+                loginBtn.classList.add('hidden');
+                loginPerson.classList.remove('hidden');
+            }
+            else{
+                loginBtn.classList.remove('hidden');
+                loginPerson.classList.add('hidden');
+            }
+        }
+
+        changePage.addEventListener('click', handleChangePage)
+        loginArea.addEventListener('click', handleLogin)
+
+    </script>
+</body>
+
+</html>
